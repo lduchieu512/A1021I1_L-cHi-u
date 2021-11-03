@@ -1,0 +1,5 @@
+Begin 
+	Input x = USD
+	x = 23000 y
+	Display y = VND
+End
