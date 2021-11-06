@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form đơn giản</title>
+    <style>
+        .in{
+            background: chocolate;
+        }
+        hr{
+            display: block;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 1px;
+        }
+        .un{
+            background: khaki;
+        }
+    </style>
+</head>
+<body>
+<form name="hobby" action="formdongian.html" class="un" >
+    <fieldset >
+        <legend  style="color: orangered"><h1>Sở thích của bạn</h1> </legend><br>
+    <label for="123" style="color: blue">Họ và tên: </label>
+    <input type="text " name="usename" id="123"> <br>
+    <label for="321" style="color: blue">Email: </label>
+    <input type="text" name="Email" id="321"> <br>
+        <label style="color: blue">Sở thích:</label><br>
+        <label style="color: red"> <input name="hobby" value="sport" type="checkbox"> Thể thao</label>
+        <label  style="color: red"> <input name="hobby" value="music" type="checkbox"> Âm nhạc </label>
+        <label  style="color: red"> <input name="hobby" value="reading book" type="checkbox"> Đọc sách</label><br>
+        <label  style="color: red"> <input name="hobby" value="web" type="checkbox"> Lướt web</label>
+        <label  style="color: red"> <input name="hobby" value="gaming" type="checkbox"> Chơi game</label>
+        <label  style="color: red"> <input name="hobby" value="film" type="checkbox"> Chơi phim</label><br>
+        <label  style="color: red"> <input name="hobby" value="travel" type="checkbox"> Du lịch</label><br>
+    <input type="submit" value="Gửi thông tin">
+    <input type="reset" value="Nhập lại">
+    </fieldset>
+</form>
+<hr >
+<form name="signUp" action="formdongian.html" class="in">
+    <fieldset>
+        <legend style="color: orangered"><h1> Student registration</h1></legend><br>
+        <label for="234" style="color: blue"> Yourname</label>
+        <input type="text" name="youName" id="234"><br>
+        <label for="235"style="color: blue"> Date of birth</label>
+        <input type="text" name="birth" id="235"><br>
+        <label style="color: blue"> Gender</label>
+        <input type="radio" name="nam"> Male
+        <input type="radio" name="nu"> Female <br>
+        <label style="color: blue"> Address </label>
+        <textarea cols="100" rows="1" style="m"></textarea> <br>
+        <label style="color: blue"> Class </label>
+        <select name="class">
+            <option value="A11" >A11 </option>
+            <option value="A12"> A12</option>
+            <option value="A13"> A13</option>
+            <option value="A14"> A14</option>
+            <option value="A15"> A15</option>
+        </select><br>
+        <label for="email" style="color: blue"> Email</label>
+        <input type="text" id="email" name="email"><br>
+        <label for="phone" style="color: blue">Phone</label>
+        <input type="text" id="phone" name="phone"><br>
+        <input type="submit" value="Sign up">
+        <input type="submit" value="Sign in">
+    </fieldset>
+</form>
+</body>
+</html>
