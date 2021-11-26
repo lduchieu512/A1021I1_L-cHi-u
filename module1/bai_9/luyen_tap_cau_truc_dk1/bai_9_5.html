@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập điểm bài kiểm tra: ");
+    let b = prompt("Nhập điểm thi giữa kỳ: ");
+    let c = prompt("Nhập điểm thi cuối kỳ: ");
+    let tb;
+    tb = (a*1 + b*2 + c*3)/6
+    if ( tb >5 && tb <6.5){
+        document.write("Học lực xếp loại: Trung bình");
+    }else if (tb>6.5 && tb<8.5){
+        document.write("Học lực xếp loại:  Khá");
+    }else if (tb>8.5){
+        document.write("Học lực xếp loại: Giỏi");
+    }else {
+        document.write("Học lực xếp loại: Yếu")
+    }
+
+</script>
+</body>
+</html>

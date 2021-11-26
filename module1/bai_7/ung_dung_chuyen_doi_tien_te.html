@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+
+</head>
+<body>
+<table>
+    <tr>
+        <th>Ammout</th>
+        <th>From Currency</th>
+        <th> To Currency</th>
+    </tr>
+    <tr>
+        <td><input type="text" id="vao"></td>
+        <td><select id=" from1">
+            <option value="a">VietNam</option>
+            <option value="b">USA</option>
+            <option value="c">China</option>
+        </select></td>
+
+        <td><select id="from2">
+            <option value="a">VND</option>
+            <option value="b">USD</option>
+            <option value="c">CNY</option>
+        </select></td>
+
+        <td><button onclick="lamviec()">Convert</button></td>
+    </tr>
+</table>
+<script>
+function lamviec() {
+    let giatrivao = document.getElementById('vao').value;
+    let from1 = document.getElementById(' from1').value;
+    let from2 = document.getElementById('from2').value;
+
+    if (from1 == from2){
+        alert(giatrivao);
+    }
+    if (from1 == "a" && from2 == "b") {
+        alert(giatrivao / 23000);
+    }
+    if (from1 == "b" && from2 == "a"){
+        alert( giatrivao*23000);
+    }
+    if (from1 == "a" && from2 == "c"){
+        alert( giatrivao/3546.97);
+    }
+    if (from1 == "c" && from2 == "a"){
+        alert( giatrivao*3546.97);
+    }
+    if (from1 == "b" && from2 == "c"){
+        alert( giatrivao*6.39);
+    }
+    if (from1 == "c" && from2 == "b"){
+        alert( giatrivao/6.39);
+    }
+
+
+}
+
+</script>
+
+</body>
+</html>

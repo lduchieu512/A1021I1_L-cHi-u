@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+<h1>Calculator</h1>
+1st value : <input type="text" value="" id="textVal1">
+2nd value : <input type="text" value="" id="textVal2"><br/><br/>
+Result : <input type="text" id="result" value="">
+<input type="submit" onClick="adding()" value="+">
+<input type="submit" onClick="subtraction()" value="-">
+<input type="submit" onClick="multiplication()" value="*">
+<input type="submit" onClick="division()" value="/">
+<script>
+    function adding() {
+        let v1 = parseInt(document.getElementById("textVal1").value);
+        let v2 = parseInt(document.getElementById('textVal2').value);
+        document.getElementById("result").value = v1+v2;
+    }
+    function subtraction() {
+        let v1 = parseInt(document.getElementById("textVal1").value);
+        let v2 = parseInt(document.getElementById('textVal2').value);
+        document.getElementById("result").value = v1-v2;
+    }
+    function multiplication() {
+        let v1 = parseInt(document.getElementById("textVal1").value);
+        let v2 = parseInt(document.getElementById('textVal2').value);
+        document.getElementById("result").value = v1*v2;
+    }
+    function division() {
+        let v1 = parseInt(document.getElementById("textVal1").value);
+        let v2 = parseInt(document.getElementById('textVal2').value);
+        document.getElementById("result").value = v1/v2;
+    }
+</script>
+</body>
+</html>

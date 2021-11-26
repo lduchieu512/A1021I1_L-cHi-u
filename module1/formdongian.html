@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form đơn giản</title>
+    <style>
+        .in{
+            background: chocolate;
+            width: 500px;
+        }
+        hr{
+            display: block;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 1px;
+        }
+        .un{
+            background: khaki;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+<form name="hobby" action="formdongian.html" class="un" >
+    <fieldset style="width: 468px">
+        <legend align="center" style="color: orangered"><h1>Sở thích của bạn</h1> </legend><br>
+    <table>
+        <tr>
+            <td><label for="123" style="color: blue">Họ và tên: </label></td>
+            <td><input type="text " name="usename" id="123"> <br></td>
+        </tr>
+        <tr>
+            <td><label for="321" style="color: blue">Email: </label></td>
+            <td><input type="text" name="Email" id="321"> <br></td>
+        </tr>
+        <tr>
+            <td><label style="color: blue; vertical-align: top ">Sở thích:</label><br></td>
+        <td><label style="color: red"> <input name="hobby" value="sport" type="checkbox"> Thể thao</label>
+        <label  style="color: red"> <input name="hobby" value="music" type="checkbox" > Âm nhạc </label>
+        <label  style="color: red"> <input name="hobby" value="reading book" type="checkbox"> Đọc sách</label><br>
+        <label  style="color: red"> <input name="hobby" value="web" type="checkbox"> Lướt web</label>
+        <label  style="color: red"> <input name="hobby" value="gaming" type="checkbox"> Chơi game</label>
+        <label  style="color: red"> <input name="hobby" value="film" type="checkbox"> Chơi phim</label><br>
+        <label  style="color: red"> <input name="hobby" value="travel" type="checkbox"> Du lịch</label><br>
+        </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Gửi thông tin"> </td>
+            <td><input type="reset" value="Nhập lại"></td>
+        </tr>
+    </table>
+    </fieldset>
+</form>
+<hr>
+<form name="signUp" action="formdongian.html" class="in">
+    <fieldset style="width: 468px">
+        <legend style="color: orangered; text-align: center" ><h1> Student registration</h1></legend><br>
+   <table>
+       <tr>
+           <td><label for="234" style="color: blue"> Yourname</label></td>
+           <td><input type="text" name="youName" id="234"</td>
+       </tr>
+       <tr>
+               <td><label for="235"style="color: blue"> Date of birth</label></td>
+               <td><input type="text" name="birth" id="235"></td>
+       </tr>
+       <tr>
+           <td><label style="color: blue"> Gender</label></td>
+        <td><input type="radio" name="nam"> Male
+            <input type="radio" name="nu"> Female </td>
+       </tr>
+       <tr>
+           <td> <label style="color: blue"> Address </label></td>
+           <td><textarea cols="40" rows="1" ></textarea> </td>
+       </tr>
+        <tr>
+            <td> <label style="color: blue"> Class </label></td>
+        <td><select name="class">
+            <option value="A11" >A11 </option>
+            <option value="A12"> A12</option>
+            <option value="A13"> A13</option>
+            <option value="A14"> A14</option>
+            <option value="A15"> A15</option>
+        </select></td>
+        </tr>
+        <tr>
+            <td><label for="email" style="color: blue"> Email</label></td>
+            <td> <input type="text" id="email" name="email"></td>
+        </tr>
+       <tr>
+           <td><label for="phone" style="color: blue">Phone</label></td>
+           <td><input type="text" id="phone" name="phone"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td><input type="submit" value="Sign up">
+           <input type="submit" value="Sign in"></td>
+       </tr>
+   </table>
+    </fieldset>
+
+</form>
+</body>
+</html>
