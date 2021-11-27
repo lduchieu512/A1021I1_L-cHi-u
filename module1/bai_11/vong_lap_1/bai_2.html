@@ -10,10 +10,20 @@
     //     Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ. Nếu nhiệt độ dưới 20,
     //     yêu cầu người dùng tăng nhiệt độ.
 
-    let a = prompt("Nhiệt độ hiện tại:  ")
-    while ( )
-
+    let nhietdo =Number(parseInt(prompt("Nhiệt độ hiện tại:  ")));
+    while (nhietdo< 20 || nhietdo >40 ){
+        if (nhietdo<20){
+            alert("Nhiệt độ quá lạnh " );
+            nhietdo = Number(prompt("Nhập vào nhiệt độ:"));
+        }else if (nhietdo > 40){
+            alert("Nhiệt độ quá nóng " );
+            nhietdo = Number(prompt("Nhập vào nhiệt độ: "));
+        }
+    }alert("nhiệt độ bình thường");
 
 </script>
 </body>
 </html>
+
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 7</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập biến a: "));
+    let b = parseInt(prompt("Nhập biến b: "));
+    let c = parseInt(prompt("Nhập biến c: "));
+    let s = b*b - 4*a*c ;
+    document.write("Phương trình căn bậc 2 là: " +   a+ "x^2 +" +b+ " x + " +(c) +"= 0");
+    document.write("<br> Delta = "+ s);
+    let x1,x2;
+    if (s < 0 ){
+        document.write( " <br> Phương trình vô nghiệm" );
+    }else  if (s == 0){
+        x = (-b)/2*a;
+        document.write("<br>Phương trình có nghiệm kép x1 = x2 = "+ x);
+    }else if ( s > 0){
+        x1 = ((-b) + Math.sqrt(s))/2*a;
+        x2 = ((-b) - Math.sqrt(s))/2*a;
+        document.write("<br>Phương trình có 2 nghiệm là x1 = "+x1.toFixed(2)+"; x2 = "+x2.toFixed(2))
+    }
+</script>
+</body>
+</html>

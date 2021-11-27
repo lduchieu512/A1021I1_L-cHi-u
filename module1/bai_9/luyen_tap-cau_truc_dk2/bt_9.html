@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 9</title>
+</head>
+<body>
+<script>
+    // Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác.
+    //     Điều kiện để a,b,c là cạnh của một tam giác là:
+    //     a,b,c > 0
+    //     a + b > c
+    //     b + c > a
+    //     a + c > b
+let a = Number(prompt("Nhập a:"));
+let b = Number(prompt("Nhập b:"));
+let c = Number(prompt("Nhập c:"));
+  if (a>0 && b>0 && c>0 ) {
+      if (b + c > a&& a + b > c && a + c > b) {
+          alert("Cạnh a,b,c [" + a + "," + b + "," + c + "]là một hình tam giác");
+      } else {
+          alert("Cạnh a,b,c [" + a + "," + b + "," + c + "]là không phải một hình tam giác");
+      }
+
+  }else {
+      alert("Cạnh a,b,c [" + a + "," + b + "," + c + "]là không phải một hình tam giác");
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<script>
+let stars = Number(prompt("Bạn thích nhiêu sao: "));
+for (let i=0;i<stars;i++){
+    for (let j=0;j<=i;j++){
+        let sao = "*";
+        document.write(sao);
+    }
+    document.write("<br>")
+
+}
+document.write("<br><br>")
+for (let i=stars;i>0;i--){
+    for (let j=0;j<i;j++){
+        let sao = "*";
+        document.write(sao);
+    }
+    document.write("<br>")
+
+}
+document.write("<br><br>")
+
+for (let i=0;i<stars;i++){
+    for (let j=0;j<=i;j++){
+        let sao = "*";
+        document.write(sao);
+    }
+    document.write("<br>")
+
+}
+document.write("<br><br>")
+document.write("<div style='width: 100px' align='right' >")
+
+for (let i=stars;i>0;i--){
+    for (let j=0;j<i;j++){
+        let sao = "*";
+        document.write(sao);
+    }
+    document.write("<br>")
+
+}
+
+document.write("</div>")
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 2</title>
+</head>
+<body>
+<script>
+   let so = Number(prompt("nhập giai thừa: "));
+   let giai_thua =1;
+   if ( so == 0|| so ==1){
+       giai_thua = 1;
+       document.write("giai thừa của "+so+"="+giai_thua)
+   }else if (so<0){
+       alert("Error!")
+   }else {
+       for (i=1;i<=so;i++){
+
+           giai_thua = giai_thua*i;
+       }
+       document.write("giai thừa của "+so+"="+giai_thua)
+   }
+
+</script>
+</body>
+</html>
